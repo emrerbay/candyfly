@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div[title] {
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div[title]:hover::before {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.25rem;
+  white-space: nowrap;
 }
+
+
+/* Tüm kaydırma çubukları için */
+::-webkit-scrollbar {
+    width: 11px; /* Genişlik */
+    height: 3px; /* Yükseklik */
+  }
+  
+  /* Kaydırma çubukları */
+  ::-webkit-scrollbar-thumb {
+    background: #4d4b4b ; /* Arka plan rengi */
+  }
+  
+  /* Kaydırma çubuklarına gölge ekleme */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#888; /* Arka plan rengi */
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Kaydırma çubukları için arka plan */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Kaydırma çubuklarına gölge ekleme */
+  ::-webkit-scrollbar-track:hover {
+    background: #000000;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .slick-slide.slick-active.slick-center.slick-current img  {
+    opacity: 1;
+    
+  }
+  
+  .dark {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .light {
+    background: #888;
+    color:#080808
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color:whitesmoke !important;
+     transform: scale(150%);
+    ;
+  }
+  .slick-dots li button:before {
+    color:whitesmoke !important;
+    ;
+  }
+  .slick-dots li:nth-child(n+20){
+    display: none;
+  }
+  
+  .wrapper {
+    height: calc(100vh - 6rem);
+    display: flex
+  }
+
+  
+ 
+  
+ 
+  
+  
+
+  
+
+
+  
+
+  
+  
+
