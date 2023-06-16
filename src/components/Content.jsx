@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getPlaylistById } from "../stores/actions";
 import { playlistIds } from "../constant";
+import {getAccessToken} from "../spotifyAPI"
 
 const Content = () => {
   const { playlistArray } = useSelector((state) => ({
@@ -17,6 +18,7 @@ const Content = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    window.console.log("Token:",getAccessToken())
     playlistIds.map((id) => dispatch(getPlaylistById(id)));
   }, []);
 

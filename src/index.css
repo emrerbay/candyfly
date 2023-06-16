@@ -59,8 +59,8 @@ div[title]:hover::before {
   }
   
   .light {
-    background: #888;
-    color:#080808
+    background: var(--dominant-color);
+    color: #080808;
   }
   
   .slick-dots li.slick-active button:before {

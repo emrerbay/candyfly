@@ -72,7 +72,7 @@ const Anasayfa = ({ playlistArray, setHoverImage }) => {
                       className={
                         index === currentSlide[keyIndex]
                           ? "z-10 focus:z-10 scale-125"
-                          : "blur-sm"
+                          : ""
                       }
                     >
                       <Card

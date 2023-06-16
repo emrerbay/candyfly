@@ -1,5 +1,5 @@
 import React from "react";
-import SpotifyIcon from "../svg/spotify.svg";
+import Icon from "../svg/cryptoofun.svg";
 import HomeIcon from "../svg/anasayfa.svg";
 import SearchIcon from "../svg/ara.svg";
 import LibraryIcon from "../svg/kitapligin.svg";
@@ -28,10 +28,10 @@ const Sidebar = () => {
         <div className="flex items-center my-2">
           <img
             className="w-12 p-1 text-slate-500 hover:text-white m-2"
-            src={SpotifyIcon}
+            src={Icon}
             alt="spotify"
           />
-          <span className="text-white  text-2xl font-semibold">Spotify</span>
+          <span className="text-white  text-2xl font-semibold">CandyFly</span>
         </div>
         <div className="ml-2 mt-4 cursor-pointer ">
           <div className="flex items-center  hover:text-white  hover:bg-red-800">
